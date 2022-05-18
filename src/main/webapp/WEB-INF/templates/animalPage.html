@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- note that xmlns:th="http://www.thymeleaf.org does NOT work for me/myOS-->
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>animalPage</title>
+</head>
+<body>
+
+<div th:each = "animal:${animals}">
+
+    <p>Name:</p>
+    <p th:text="${animal.name}"></p>
+    <p>Country:</p>
+    <p th:text="${animal.country}"></p>
+
+
+    <hr>
+
+</div>
+
+</body>
+</html>
