@@ -18,7 +18,7 @@ public class Animal {
     private String country;
 
     @Column(name="price")
-    private int price;
+    private double price;
 
     @Column(name="link")
     private String link;
@@ -57,11 +57,11 @@ public class Animal {
         this.country = country;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 

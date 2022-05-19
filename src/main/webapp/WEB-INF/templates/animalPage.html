@@ -14,7 +14,7 @@
     <p>Country:</p>
     <p th:text="${animal.country}"></p>
     <p>Price:</p>
-    <p $ [[${animal.price}]]></p>
+    <p>€ [[${animal.price}]]</p>
     <p>ImageLink:</p>
     <img th:src="@{/images/{image}(image=${animal.link})}">
 
